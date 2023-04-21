@@ -1,0 +1,128 @@
+/* Import Google Font - Poppins */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+::selection{
+  color: #fff;
+  background: #675AFE;
+}
+.card{
+  width: 370px;
+  padding: 30px;
+  background-color: #ecf0f3;
+	box-shadow:
+		5px 5px 5px #d1d9e6,
+		-10px -10px 10px #f9f9f9;
+	border-radius: 12px;
+}
+.card header{
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0 1px #fff;
+
+  text-align: center;
+
+}
+.card form{
+  margin: 20px 0 20px 0;
+}
+form .unit{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.drop-list{
+  margin-bottom: 5px;
+}
+
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form .from, .to{
+  text-align: center;
+}
+form input{
+  height: 50px;
+  margin-bottom:5px;
+  font-size: 17px;
+  border: 1px solid #999;
+  padding: 0 15px;
+
+}
+
+form .drop-list{
+  display: flex;
+  margin-top:20px;
+  margin-bottom:20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+  background-color: #ffffff;
+}
+
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  color: black;
+
+  background: none;
+  text-align: center;
+}
+
+.drop-list .icon{
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 30px;
+  font-size: 22px;
+}
+form .exchange-rate{
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+form button{
+  text-shadow: 0 1px #fff;
+  font-size:15px;
+  font-weight: 500;
+  transition: all 0.1s ease;
+  cursor:pointer;
+  color:white;
+  border-radius:30px;
+  background-color: #675AFE;
+  padding:15px 0 15px 0;
+  box-shadow:
+  1px 4px 7px rgba(0, 0, 0, 0.5),
+  0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+form button:hover{
+  font-size: 14.5px;
+  background-color: #483adc;
+  box-shadow:0 4px 3px 1px #FCFCFC,0 6px 8px #D6D7D9,0 -4px 4px #CECFD1,0 -6px 4px #FEFEFE,inset 0 0 3px 0 #CECFD1;
+}
+form button:active{
+  background-color: #00b524;
+
+}
