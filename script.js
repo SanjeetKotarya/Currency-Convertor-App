@@ -15,9 +15,6 @@ for (let i = 0; i < dropList.length; i++) {
 
 }
 
-window.addEventListener("load", () => {
-    getExchangeRate();
-});
 
 getButton.addEventListener("click", e => {
     e.preventDefault();
@@ -30,7 +27,7 @@ function getExchangeRate() {
         fromInput.value = "1";
         fromInputVal = 1;
     }
-    toInput.value = "Getting exchange rate...";
+    toInput.value = "Wait...";
     let url = `https://v6.exchangerate-api.com/v6/14abb0b17e8749d3d5b12c0a/latest/${fromCurrency.value}`;
     fetch(url).then(response => response.json()).then(result => {
        let exchangeRate = result.conversion_rates[toCurrency.value];
